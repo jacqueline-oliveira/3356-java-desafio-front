@@ -1,6 +1,6 @@
 import getDados from "./getDados.js";
 
-const btnSortear = document.querySelector('.btn-sort');
+const btnSortear = document.querySelector('.btn-sortear');
 const fichaDescricao = document.getElementById('ficha-descricao');
 
 function carregarInfoSerie() {
@@ -24,6 +24,4 @@ function carregarInfoSerie() {
 
 
 window.onload = carregarInfoSerie();
-btnSortear.addEventListener('click', () => {
-    setTimeout(carregarInfoSerie, 500);
-});
+btnSortear.addEventListener('click', carregarInfoSerie);
